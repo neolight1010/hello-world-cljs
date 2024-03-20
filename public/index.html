@@ -11,12 +11,20 @@
   <body>
     <div id="app">
       <a-scene>
-        <a-box id="box" color="red" position="20 2 -5" rotation="0 45 45" scale="2 2 2" scale-on-mouseenter></a-box>
+        <a-box
+          id="box"
+          color="red"
+          position="20 2 -5"
+          rotation="0 45 45"
+          scale="2 2 2"
+          scale-on-mouseenter
+          animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+        ></a-box>
 
         <a-entity environment="preset:forest; dressingAmount: 500"></a-entity>
 
         <a-camera>
-          <a-cursor></a-cursor>
+          <a-cursor raycaster="objects: #box"></a-cursor>
         </a-camer>
       </a-scene>
     </div>
