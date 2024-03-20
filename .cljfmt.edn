@@ -1,0 +1,2 @@
+{:split-keypairs-over-multiple-lines? true
+ :sort-ns-references? true}

@@ -1,0 +1,11 @@
+{
+  "name": "hello-world-cljs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "watch": "shadow-cljs watch app"
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.27.5"
+  }
+}
