@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="app">
-      <a-scene>
+      <a-scene webxr="optionalFeatures: dom-overlay; overlayElement: #overlay">
         <a-box
           id="box"
           color="red"
@@ -21,11 +21,15 @@
           animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
         ></a-box>
 
-        <a-entity environment="preset:forest; dressingAmount: 500"></a-entity>
+        <!--<a-entity environment="preset:forest; dressingAmount: 500"></a-entity>-->
 
         <a-camera>
           <a-cursor raycaster="objects: #box"></a-cursor>
-        </a-camer>
+        </a-camera>
+
+        <div id="overlay" style="color: red">
+          <h1>Overlay</h1>
+        </div>
       </a-scene>
     </div>
   </body>
